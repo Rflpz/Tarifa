@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43C81A95F2C4F48D4BAD2A55 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EEF312FD2F7FBF53874DB8 /* libPods.a */; };
+		8B897EF41C31B9B900AD0825 /* loc.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8B897EF31C31B9B900AD0825 /* loc.gpx */; };
+		8BC474F81C2B4DD100AA24EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC474F71C2B4DD100AA24EC /* main.m */; };
+		8BC474FB1C2B4DD100AA24EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC474FA1C2B4DD100AA24EC /* AppDelegate.m */; };
+		8BC474FD1C2B4DD100AA24EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC474FC1C2B4DD100AA24EC /* Assets.xcassets */; };
+		8BC475001C2B4DD100AA24EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC474FE1C2B4DD100AA24EC /* LaunchScreen.storyboard */; };
+		8BC4750B1C2B4DD100AA24EC /* TarifaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4750A1C2B4DD100AA24EC /* TarifaTests.m */; };
+		8BC475161C2B4DD100AA24EC /* TarifaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC475151C2B4DD100AA24EC /* TarifaUITests.m */; };
+		8BC475261C2B521E00AA24EC /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC475251C2B521E00AA24EC /* splash.png */; };
+		8BC4752C1C2B529400AA24EC /* TRMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4752A1C2B529400AA24EC /* TRMapController.m */; };
+		8BC4752D1C2B529400AA24EC /* TRMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4752B1C2B529400AA24EC /* TRMapController.xib */; };
+		8BC475301C2B53B500AA24EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC4752F1C2B53B500AA24EC /* CoreLocation.framework */; };
+		8BC475321C2B53BA00AA24EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC475311C2B53BA00AA24EC /* MapKit.framework */; };
+		8BC475361C2B567A00AA24EC /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC475351C2B567A00AA24EC /* Annotation.m */; };
+		8BC4753E1C2B671100AA24EC /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4753D1C2B671100AA24EC /* question.png */; };
+		8BC475431C2B6EC900AA24EC /* TRQuestionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC475411C2B6EC900AA24EC /* TRQuestionsController.m */; };
+		8BC475441C2B6EC900AA24EC /* TRQuestionsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC475421C2B6EC900AA24EC /* TRQuestionsController.xib */; };
+		8BC475461C2B6FE700AA24EC /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC475451C2B6FE700AA24EC /* backButton.png */; };
+		8BC475491C2B718800AA24EC /* web.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC475471C2B718800AA24EC /* web.png */; };
+		8BD06D511C2C4B73007237B0 /* TRWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD06D4F1C2C4B73007237B0 /* TRWebController.m */; };
+		8BD06D521C2C4B73007237B0 /* TRWebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D501C2C4B73007237B0 /* TRWebController.xib */; };
+		8BD06D5F1C2C5374007237B0 /* TRReportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD06D5D1C2C5374007237B0 /* TRReportController.m */; };
+		8BD06D601C2C5374007237B0 /* TRReportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D5E1C2C5374007237B0 /* TRReportController.xib */; };
+		8BD06D661C2C656D007237B0 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D651C2C656D007237B0 /* location.png */; };
+		8BD06D691C2C7082007237B0 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D671C2C7082007237B0 /* facebook.png */; };
+		8BD06D6A1C2C7082007237B0 /* bug.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D681C2C7082007237B0 /* bug.png */; };
+		8BD06D6C1C2C70F9007237B0 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D6B1C2C70F9007237B0 /* next.png */; };
+		8BD06D711C2F89E3007237B0 /* TRAnswerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD06D6F1C2F89E3007237B0 /* TRAnswerController.m */; };
+		8BD06D721C2F89E3007237B0 /* TRAnswerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D701C2F89E3007237B0 /* TRAnswerController.xib */; };
+		8BD06D741C2F94A8007237B0 /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D731C2F94A8007237B0 /* table.png */; };
+		8BD06D761C2FA3B9007237B0 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D751C2FA3B9007237B0 /* share.png */; };
+		8BD06D781C2FA481007237B0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D771C2FA481007237B0 /* Social.framework */; };
+		8BD06D7A1C2FA609007237B0 /* shareApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD06D791C2FA609007237B0 /* shareApp.png */; };
+		8BD06D7C1C2FA913007237B0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D7B1C2FA913007237B0 /* AudioToolbox.framework */; };
+		8BD06D7E1C2FA921007237B0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D7D1C2FA921007237B0 /* CFNetwork.framework */; };
+		8BD06D801C2FA926007237B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D7F1C2FA926007237B0 /* CoreGraphics.framework */; };
+		8BD06D821C2FA92D007237B0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D811C2FA92D007237B0 /* QuartzCore.framework */; };
+		8BD06D841C2FA931007237B0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D831C2FA931007237B0 /* Security.framework */; };
+		8BD06D861C2FA937007237B0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D851C2FA937007237B0 /* StoreKit.framework */; };
+		8BD06D881C2FA943007237B0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D871C2FA943007237B0 /* SystemConfiguration.framework */; };
+		8BD06D8A1C2FA948007237B0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D891C2FA948007237B0 /* libz.tbd */; };
+		8BD06D8C1C2FA955007237B0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D8B1C2FA955007237B0 /* libsqlite3.tbd */; };
+		8BD06D8E1C2FA95D007237B0 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D8D1C2FA95D007237B0 /* Accounts.framework */; };
+		8BD06D911C2FA972007237B0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D8F1C2FA972007237B0 /* Bolts.framework */; };
+		8BD06D921C2FA972007237B0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD06D901C2FA972007237B0 /* Parse.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BC475071C2B4DD100AA24EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BC474EB1C2B4DD100AA24EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BC474F21C2B4DD100AA24EC;
+			remoteInfo = Tarifa;
+		};
+		8BC475121C2B4DD100AA24EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BC474EB1C2B4DD100AA24EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BC474F21C2B4DD100AA24EC;
+			remoteInfo = Tarifa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62AA75D6CA6404005156D565 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		69EEF312FD2F7FBF53874DB8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3C192A9EAAC7BBA5A2A30F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8B897EF31C31B9B900AD0825 /* loc.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = loc.gpx; sourceTree = "<group>"; };
+		8BC474F31C2B4DD100AA24EC /* Tarifa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarifa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC474F71C2B4DD100AA24EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BC474F91C2B4DD100AA24EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BC474FA1C2B4DD100AA24EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BC474FC1C2B4DD100AA24EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BC474FF1C2B4DD100AA24EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BC475011C2B4DD100AA24EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC475061C2B4DD100AA24EC /* TarifaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TarifaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC4750A1C2B4DD100AA24EC /* TarifaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TarifaTests.m; sourceTree = "<group>"; };
+		8BC4750C1C2B4DD100AA24EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC475111C2B4DD100AA24EC /* TarifaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TarifaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC475151C2B4DD100AA24EC /* TarifaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TarifaUITests.m; sourceTree = "<group>"; };
+		8BC475171C2B4DD100AA24EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC475251C2B521E00AA24EC /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		8BC475291C2B529400AA24EC /* TRMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMapController.h; sourceTree = "<group>"; };
+		8BC4752A1C2B529400AA24EC /* TRMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMapController.m; sourceTree = "<group>"; };
+		8BC4752B1C2B529400AA24EC /* TRMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRMapController.xib; sourceTree = "<group>"; };
+		8BC4752F1C2B53B500AA24EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8BC475311C2B53BA00AA24EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8BC475341C2B567A00AA24EC /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		8BC475351C2B567A00AA24EC /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		8BC4753D1C2B671100AA24EC /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		8BC475401C2B6EC900AA24EC /* TRQuestionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRQuestionsController.h; sourceTree = "<group>"; };
+		8BC475411C2B6EC900AA24EC /* TRQuestionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRQuestionsController.m; sourceTree = "<group>"; };
+		8BC475421C2B6EC900AA24EC /* TRQuestionsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRQuestionsController.xib; sourceTree = "<group>"; };
+		8BC475451C2B6FE700AA24EC /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		8BC475471C2B718800AA24EC /* web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web.png; sourceTree = "<group>"; };
+		8BD06D4E1C2C4B73007237B0 /* TRWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRWebController.h; sourceTree = "<group>"; };
+		8BD06D4F1C2C4B73007237B0 /* TRWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRWebController.m; sourceTree = "<group>"; };
+		8BD06D501C2C4B73007237B0 /* TRWebController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRWebController.xib; sourceTree = "<group>"; };
+		8BD06D5C1C2C5374007237B0 /* TRReportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRReportController.h; sourceTree = "<group>"; };
+		8BD06D5D1C2C5374007237B0 /* TRReportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRReportController.m; sourceTree = "<group>"; };
+		8BD06D5E1C2C5374007237B0 /* TRReportController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRReportController.xib; sourceTree = "<group>"; };
+		8BD06D651C2C656D007237B0 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		8BD06D671C2C7082007237B0 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		8BD06D681C2C7082007237B0 /* bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bug.png; sourceTree = "<group>"; };
+		8BD06D6B1C2C70F9007237B0 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		8BD06D6E1C2F89E3007237B0 /* TRAnswerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAnswerController.h; sourceTree = "<group>"; };
+		8BD06D6F1C2F89E3007237B0 /* TRAnswerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAnswerController.m; sourceTree = "<group>"; };
+		8BD06D701C2F89E3007237B0 /* TRAnswerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRAnswerController.xib; sourceTree = "<group>"; };
+		8BD06D731C2F94A8007237B0 /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
+		8BD06D751C2FA3B9007237B0 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		8BD06D771C2FA481007237B0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8BD06D791C2FA609007237B0 /* shareApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareApp.png; sourceTree = "<group>"; };
+		8BD06D7B1C2FA913007237B0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8BD06D7D1C2FA921007237B0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8BD06D7F1C2FA926007237B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8BD06D811C2FA92D007237B0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8BD06D831C2FA931007237B0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8BD06D851C2FA937007237B0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8BD06D871C2FA943007237B0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8BD06D891C2FA948007237B0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8BD06D8B1C2FA955007237B0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8BD06D8D1C2FA95D007237B0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8BD06D8F1C2FA972007237B0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		8BD06D901C2FA972007237B0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BC474F01C2B4DD100AA24EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD06D911C2FA972007237B0 /* Bolts.framework in Frameworks */,
+				8BD06D8E1C2FA95D007237B0 /* Accounts.framework in Frameworks */,
+				8BD06D8C1C2FA955007237B0 /* libsqlite3.tbd in Frameworks */,
+				8BD06D8A1C2FA948007237B0 /* libz.tbd in Frameworks */,
+				8BD06D881C2FA943007237B0 /* SystemConfiguration.framework in Frameworks */,
+				8BD06D861C2FA937007237B0 /* StoreKit.framework in Frameworks */,
+				8BD06D921C2FA972007237B0 /* Parse.framework in Frameworks */,
+				8BD06D841C2FA931007237B0 /* Security.framework in Frameworks */,
+				8BD06D821C2FA92D007237B0 /* QuartzCore.framework in Frameworks */,
+				8BD06D801C2FA926007237B0 /* CoreGraphics.framework in Frameworks */,
+				8BD06D7E1C2FA921007237B0 /* CFNetwork.framework in Frameworks */,
+				8BD06D7C1C2FA913007237B0 /* AudioToolbox.framework in Frameworks */,
+				8BD06D781C2FA481007237B0 /* Social.framework in Frameworks */,
+				8BC475321C2B53BA00AA24EC /* MapKit.framework in Frameworks */,
+				8BC475301C2B53B500AA24EC /* CoreLocation.framework in Frameworks */,
+				43C81A95F2C4F48D4BAD2A55 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC475031C2B4DD100AA24EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC4750E1C2B4DD100AA24EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BC474EA1C2B4DD100AA24EC = {
+			isa = PBXGroup;
+			children = (
+				8BC474F51C2B4DD100AA24EC /* Tarifa */,
+				8BC475091C2B4DD100AA24EC /* TarifaTests */,
+				8BC475141C2B4DD100AA24EC /* TarifaUITests */,
+				8BC474F41C2B4DD100AA24EC /* Products */,
+				CA9150544AFCC40D5FE796D3 /* Pods */,
+				EF525E16247C48AA32FB1DFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BC474F41C2B4DD100AA24EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BC474F31C2B4DD100AA24EC /* Tarifa.app */,
+				8BC475061C2B4DD100AA24EC /* TarifaTests.xctest */,
+				8BC475111C2B4DD100AA24EC /* TarifaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BC474F51C2B4DD100AA24EC /* Tarifa */ = {
+			isa = PBXGroup;
+			children = (
+				8BC475241C2B521100AA24EC /* Assets */,
+				8BC4752E1C2B538F00AA24EC /* Frameworks outside */,
+				8BC475271C2B527C00AA24EC /* ViewControllers */,
+				8BC475231C2B4FD000AA24EC /* App Delegate */,
+				8BC474FC1C2B4DD100AA24EC /* Assets.xcassets */,
+				8BC474FE1C2B4DD100AA24EC /* LaunchScreen.storyboard */,
+				8BC475011C2B4DD100AA24EC /* Info.plist */,
+				8BC474F61C2B4DD100AA24EC /* Supporting Files */,
+			);
+			path = Tarifa;
+			sourceTree = "<group>";
+		};
+		8BC474F61C2B4DD100AA24EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BC474F71C2B4DD100AA24EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BC475091C2B4DD100AA24EC /* TarifaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BC4750A1C2B4DD100AA24EC /* TarifaTests.m */,
+				8BC4750C1C2B4DD100AA24EC /* Info.plist */,
+			);
+			path = TarifaTests;
+			sourceTree = "<group>";
+		};
+		8BC475141C2B4DD100AA24EC /* TarifaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BC475151C2B4DD100AA24EC /* TarifaUITests.m */,
+				8BC475171C2B4DD100AA24EC /* Info.plist */,
+			);
+			path = TarifaUITests;
+			sourceTree = "<group>";
+		};
+		8BC475231C2B4FD000AA24EC /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8BC474F91C2B4DD100AA24EC /* AppDelegate.h */,
+				8BC474FA1C2B4DD100AA24EC /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		8BC475241C2B521100AA24EC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8B897EF31C31B9B900AD0825 /* loc.gpx */,
+				8BD06D791C2FA609007237B0 /* shareApp.png */,
+				8BD06D751C2FA3B9007237B0 /* share.png */,
+				8BD06D731C2F94A8007237B0 /* table.png */,
+				8BD06D6B1C2C70F9007237B0 /* next.png */,
+				8BD06D671C2C7082007237B0 /* facebook.png */,
+				8BD06D681C2C7082007237B0 /* bug.png */,
+				8BD06D651C2C656D007237B0 /* location.png */,
+				8BC475471C2B718800AA24EC /* web.png */,
+				8BC475451C2B6FE700AA24EC /* backButton.png */,
+				8BC4753D1C2B671100AA24EC /* question.png */,
+				8BC475251C2B521E00AA24EC /* splash.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8BC475271C2B527C00AA24EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BD06D5B1C2C5355007237B0 /* TRReportController */,
+				8BD06D4D1C2C4B64007237B0 /* TRWebController */,
+				8BC4753F1C2B6EBB00AA24EC /* TRQuestionsController */,
+				8BC475281C2B528700AA24EC /* TRMapController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8BC475281C2B528700AA24EC /* TRMapController */ = {
+			isa = PBXGroup;
+			children = (
+				8BC475331C2B566F00AA24EC /* Annotation */,
+				8BC475291C2B529400AA24EC /* TRMapController.h */,
+				8BC4752A1C2B529400AA24EC /* TRMapController.m */,
+				8BC4752B1C2B529400AA24EC /* TRMapController.xib */,
+			);
+			name = TRMapController;
+			sourceTree = "<group>";
+		};
+		8BC4752E1C2B538F00AA24EC /* Frameworks outside */ = {
+			isa = PBXGroup;
+			children = (
+				8BD06D8F1C2FA972007237B0 /* Bolts.framework */,
+				8BD06D901C2FA972007237B0 /* Parse.framework */,
+			);
+			name = "Frameworks outside";
+			sourceTree = "<group>";
+		};
+		8BC475331C2B566F00AA24EC /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				8BC475341C2B567A00AA24EC /* Annotation.h */,
+				8BC475351C2B567A00AA24EC /* Annotation.m */,
+			);
+			name = Annotation;
+			sourceTree = "<group>";
+		};
+		8BC4753F1C2B6EBB00AA24EC /* TRQuestionsController */ = {
+			isa = PBXGroup;
+			children = (
+				8BC475401C2B6EC900AA24EC /* TRQuestionsController.h */,
+				8BC475411C2B6EC900AA24EC /* TRQuestionsController.m */,
+				8BC475421C2B6EC900AA24EC /* TRQuestionsController.xib */,
+				8BD06D6D1C2F89D3007237B0 /* TRAnswerController */,
+			);
+			name = TRQuestionsController;
+			sourceTree = "<group>";
+		};
+		8BD06D4D1C2C4B64007237B0 /* TRWebController */ = {
+			isa = PBXGroup;
+			children = (
+				8BD06D4E1C2C4B73007237B0 /* TRWebController.h */,
+				8BD06D4F1C2C4B73007237B0 /* TRWebController.m */,
+				8BD06D501C2C4B73007237B0 /* TRWebController.xib */,
+			);
+			name = TRWebController;
+			sourceTree = "<group>";
+		};
+		8BD06D5B1C2C5355007237B0 /* TRReportController */ = {
+			isa = PBXGroup;
+			children = (
+				8BD06D5C1C2C5374007237B0 /* TRReportController.h */,
+				8BD06D5D1C2C5374007237B0 /* TRReportController.m */,
+				8BD06D5E1C2C5374007237B0 /* TRReportController.xib */,
+			);
+			name = TRReportController;
+			sourceTree = "<group>";
+		};
+		8BD06D6D1C2F89D3007237B0 /* TRAnswerController */ = {
+			isa = PBXGroup;
+			children = (
+				8BD06D6E1C2F89E3007237B0 /* TRAnswerController.h */,
+				8BD06D6F1C2F89E3007237B0 /* TRAnswerController.m */,
+				8BD06D701C2F89E3007237B0 /* TRAnswerController.xib */,
+			);
+			name = TRAnswerController;
+			sourceTree = "<group>";
+		};
+		CA9150544AFCC40D5FE796D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B3C192A9EAAC7BBA5A2A30F /* Pods.debug.xcconfig */,
+				62AA75D6CA6404005156D565 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF525E16247C48AA32FB1DFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BD06D8D1C2FA95D007237B0 /* Accounts.framework */,
+				8BD06D8B1C2FA955007237B0 /* libsqlite3.tbd */,
+				8BD06D891C2FA948007237B0 /* libz.tbd */,
+				8BD06D871C2FA943007237B0 /* SystemConfiguration.framework */,
+				8BD06D851C2FA937007237B0 /* StoreKit.framework */,
+				8BD06D831C2FA931007237B0 /* Security.framework */,
+				8BD06D811C2FA92D007237B0 /* QuartzCore.framework */,
+				8BD06D7F1C2FA926007237B0 /* CoreGraphics.framework */,
+				8BD06D7D1C2FA921007237B0 /* CFNetwork.framework */,
+				8BD06D7B1C2FA913007237B0 /* AudioToolbox.framework */,
+				8BD06D771C2FA481007237B0 /* Social.framework */,
+				8BC475311C2B53BA00AA24EC /* MapKit.framework */,
+				8BC4752F1C2B53B500AA24EC /* CoreLocation.framework */,
+				69EEF312FD2F7FBF53874DB8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BC474F21C2B4DD100AA24EC /* Tarifa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC4751A1C2B4DD100AA24EC /* Build configuration list for PBXNativeTarget "Tarifa" */;
+			buildPhases = (
+				C36CA23EADE716BDE94BA512 /* Check Pods Manifest.lock */,
+				8BC474EF1C2B4DD100AA24EC /* Sources */,
+				8BC474F01C2B4DD100AA24EC /* Frameworks */,
+				8BC474F11C2B4DD100AA24EC /* Resources */,
+				BAD86939FBD740BA7D60DFF5 /* Embed Pods Frameworks */,
+				68012BE077C7DE69254E2DE9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tarifa;
+			productName = Tarifa;
+			productReference = 8BC474F31C2B4DD100AA24EC /* Tarifa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BC475051C2B4DD100AA24EC /* TarifaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC4751D1C2B4DD100AA24EC /* Build configuration list for PBXNativeTarget "TarifaTests" */;
+			buildPhases = (
+				8BC475021C2B4DD100AA24EC /* Sources */,
+				8BC475031C2B4DD100AA24EC /* Frameworks */,
+				8BC475041C2B4DD100AA24EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BC475081C2B4DD100AA24EC /* PBXTargetDependency */,
+			);
+			name = TarifaTests;
+			productName = TarifaTests;
+			productReference = 8BC475061C2B4DD100AA24EC /* TarifaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BC475101C2B4DD100AA24EC /* TarifaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC475201C2B4DD100AA24EC /* Build configuration list for PBXNativeTarget "TarifaUITests" */;
+			buildPhases = (
+				8BC4750D1C2B4DD100AA24EC /* Sources */,
+				8BC4750E1C2B4DD100AA24EC /* Frameworks */,
+				8BC4750F1C2B4DD100AA24EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BC475131C2B4DD100AA24EC /* PBXTargetDependency */,
+			);
+			name = TarifaUITests;
+			productName = TarifaUITests;
+			productReference = 8BC475111C2B4DD100AA24EC /* TarifaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BC474EB1C2B4DD100AA24EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Rflpz;
+				TargetAttributes = {
+					8BC474F21C2B4DD100AA24EC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4AZJQ67WK2;
+					};
+					8BC475051C2B4DD100AA24EC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8BC474F21C2B4DD100AA24EC;
+					};
+					8BC475101C2B4DD100AA24EC = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8BC474F21C2B4DD100AA24EC;
+					};
+				};
+			};
+			buildConfigurationList = 8BC474EE1C2B4DD100AA24EC /* Build configuration list for PBXProject "Tarifa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BC474EA1C2B4DD100AA24EC;
+			productRefGroup = 8BC474F41C2B4DD100AA24EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BC474F21C2B4DD100AA24EC /* Tarifa */,
+				8BC475051C2B4DD100AA24EC /* TarifaTests */,
+				8BC475101C2B4DD100AA24EC /* TarifaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BC474F11C2B4DD100AA24EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD06D6C1C2C70F9007237B0 /* next.png in Resources */,
+				8B897EF41C31B9B900AD0825 /* loc.gpx in Resources */,
+				8BC475491C2B718800AA24EC /* web.png in Resources */,
+				8BC4752D1C2B529400AA24EC /* TRMapController.xib in Resources */,
+				8BD06D521C2C4B73007237B0 /* TRWebController.xib in Resources */,
+				8BD06D741C2F94A8007237B0 /* table.png in Resources */,
+				8BD06D661C2C656D007237B0 /* location.png in Resources */,
+				8BC475461C2B6FE700AA24EC /* backButton.png in Resources */,
+				8BD06D6A1C2C7082007237B0 /* bug.png in Resources */,
+				8BD06D721C2F89E3007237B0 /* TRAnswerController.xib in Resources */,
+				8BC4753E1C2B671100AA24EC /* question.png in Resources */,
+				8BD06D761C2FA3B9007237B0 /* share.png in Resources */,
+				8BD06D7A1C2FA609007237B0 /* shareApp.png in Resources */,
+				8BD06D601C2C5374007237B0 /* TRReportController.xib in Resources */,
+				8BC474FD1C2B4DD100AA24EC /* Assets.xcassets in Resources */,
+				8BC475261C2B521E00AA24EC /* splash.png in Resources */,
+				8BD06D691C2C7082007237B0 /* facebook.png in Resources */,
+				8BC475001C2B4DD100AA24EC /* LaunchScreen.storyboard in Resources */,
+				8BC475441C2B6EC900AA24EC /* TRQuestionsController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC475041C2B4DD100AA24EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC4750F1C2B4DD100AA24EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68012BE077C7DE69254E2DE9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAD86939FBD740BA7D60DFF5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C36CA23EADE716BDE94BA512 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BC474EF1C2B4DD100AA24EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC4752C1C2B529400AA24EC /* TRMapController.m in Sources */,
+				8BD06D711C2F89E3007237B0 /* TRAnswerController.m in Sources */,
+				8BC474FB1C2B4DD100AA24EC /* AppDelegate.m in Sources */,
+				8BC475361C2B567A00AA24EC /* Annotation.m in Sources */,
+				8BC475431C2B6EC900AA24EC /* TRQuestionsController.m in Sources */,
+				8BD06D511C2C4B73007237B0 /* TRWebController.m in Sources */,
+				8BC474F81C2B4DD100AA24EC /* main.m in Sources */,
+				8BD06D5F1C2C5374007237B0 /* TRReportController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC475021C2B4DD100AA24EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC4750B1C2B4DD100AA24EC /* TarifaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC4750D1C2B4DD100AA24EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC475161C2B4DD100AA24EC /* TarifaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BC475081C2B4DD100AA24EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BC474F21C2B4DD100AA24EC /* Tarifa */;
+			targetProxy = 8BC475071C2B4DD100AA24EC /* PBXContainerItemProxy */;
+		};
+		8BC475131C2B4DD100AA24EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BC474F21C2B4DD100AA24EC /* Tarifa */;
+			targetProxy = 8BC475121C2B4DD100AA24EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BC474FE1C2B4DD100AA24EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BC474FF1C2B4DD100AA24EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BC475181C2B4DD100AA24EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BC475191C2B4DD100AA24EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BC4751B1C2B4DD100AA24EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B3C192A9EAAC7BBA5A2A30F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tarifa",
+				);
+				INFOPLIST_FILE = Tarifa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rflpz.Taxrifa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BC4751C1C2B4DD100AA24EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AA75D6CA6404005156D565 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tarifa",
+				);
+				INFOPLIST_FILE = Tarifa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rflpz.Taxrifa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8BC4751E1C2B4DD100AA24EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TarifaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rflpz.TarifaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tarifa.app/Tarifa";
+			};
+			name = Debug;
+		};
+		8BC4751F1C2B4DD100AA24EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TarifaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rflpz.TarifaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tarifa.app/Tarifa";
+			};
+			name = Release;
+		};
+		8BC475211C2B4DD100AA24EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TarifaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rflpz.TarifaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tarifa;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8BC475221C2B4DD100AA24EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TarifaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rflpz.TarifaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tarifa;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BC474EE1C2B4DD100AA24EC /* Build configuration list for PBXProject "Tarifa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC475181C2B4DD100AA24EC /* Debug */,
+				8BC475191C2B4DD100AA24EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC4751A1C2B4DD100AA24EC /* Build configuration list for PBXNativeTarget "Tarifa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC4751B1C2B4DD100AA24EC /* Debug */,
+				8BC4751C1C2B4DD100AA24EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC4751D1C2B4DD100AA24EC /* Build configuration list for PBXNativeTarget "TarifaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC4751E1C2B4DD100AA24EC /* Debug */,
+				8BC4751F1C2B4DD100AA24EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC475201C2B4DD100AA24EC /* Build configuration list for PBXNativeTarget "TarifaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC475211C2B4DD100AA24EC /* Debug */,
+				8BC475221C2B4DD100AA24EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BC474EB1C2B4DD100AA24EC /* Project object */;
+}

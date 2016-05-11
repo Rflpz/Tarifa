@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRQuestionsController">
+            <connections>
+                <outlet property="tableView" destination="1tG-Sb-BWQ" id="PBV-NK-z4H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ih2-cq-HRM">
+                    <rect key="frame" x="8" y="510" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8Ev-Rd-Jgz"/>
+                        <constraint firstAttribute="width" constant="50" id="MAP-1k-ISl"/>
+                    </constraints>
+                    <state key="normal" image="facebook.png">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                    <connections>
+                        <action selector="goToFacebook:" destination="-1" eventType="touchUpInside" id="bM9-LQ-Kx4"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-Sb-BWQ">
+                    <rect key="frame" x="0.0" y="65" width="320" height="437"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ijp-dd-JIG"/>
+                        <outlet property="delegate" destination="-1" id="bW9-wH-4I6"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIj-Ue-9mo">
+                    <rect key="frame" x="262" y="510" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="cjb-J2-ELe"/>
+                        <constraint firstAttribute="height" constant="50" id="rcF-ym-xrx"/>
+                    </constraints>
+                    <state key="normal" image="bug.png"/>
+                    <connections>
+                        <action selector="goToReport:" destination="-1" eventType="touchUpInside" id="z8y-ut-Ghi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4x7-2l-48q">
+                    <rect key="frame" x="66" y="510" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="4ry-Fa-xDd"/>
+                        <constraint firstAttribute="height" constant="50" id="gpz-t4-A0v"/>
+                    </constraints>
+                    <state key="normal" image="table.png"/>
+                    <connections>
+                        <action selector="goToTableOnline:" destination="-1" eventType="touchUpInside" id="fda-Kz-rk7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x75-57-Mjb">
+                    <rect key="frame" x="204" y="510" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Fdt-cB-4iA"/>
+                        <constraint firstAttribute="width" constant="50" id="tDP-Xk-kxw"/>
+                    </constraints>
+                    <state key="normal" image="share.png"/>
+                    <connections>
+                        <action selector="shareOnFacebook:" destination="-1" eventType="touchUpInside" id="a6v-3m-tJM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1tG-Sb-BWQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="0Yh-5J-fH5"/>
+                <constraint firstItem="Ih2-cq-HRM" firstAttribute="top" secondItem="1tG-Sb-BWQ" secondAttribute="bottom" constant="8" id="4aC-Mj-cOx"/>
+                <constraint firstAttribute="trailing" secondItem="1tG-Sb-BWQ" secondAttribute="trailing" id="9UU-bO-rdD"/>
+                <constraint firstItem="4x7-2l-48q" firstAttribute="leading" secondItem="Ih2-cq-HRM" secondAttribute="trailing" constant="8" id="Ibv-ub-ayj"/>
+                <constraint firstAttribute="trailing" secondItem="pIj-Ue-9mo" secondAttribute="trailing" constant="8" id="Iln-Td-ZQv"/>
+                <constraint firstItem="pIj-Ue-9mo" firstAttribute="top" secondItem="1tG-Sb-BWQ" secondAttribute="bottom" constant="8" id="XhS-Ev-Xfo"/>
+                <constraint firstAttribute="bottom" secondItem="Ih2-cq-HRM" secondAttribute="bottom" constant="8" id="Y7t-Le-uGs"/>
+                <constraint firstItem="pIj-Ue-9mo" firstAttribute="leading" secondItem="x75-57-Mjb" secondAttribute="trailing" constant="8" id="ZNp-uN-Onz"/>
+                <constraint firstAttribute="bottom" secondItem="x75-57-Mjb" secondAttribute="bottom" constant="8" id="clC-Te-7gg"/>
+                <constraint firstAttribute="bottom" secondItem="4x7-2l-48q" secondAttribute="bottom" constant="8" id="dhH-f5-oYw"/>
+                <constraint firstItem="1tG-Sb-BWQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nu0-jU-qHK"/>
+                <constraint firstItem="Ih2-cq-HRM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="wne-uz-HOI"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bug.png" width="512" height="512"/>
+        <image name="facebook.png" width="512" height="512"/>
+        <image name="share.png" width="512" height="512"/>
+        <image name="table.png" width="512" height="512"/>
+    </resources>
+</document>

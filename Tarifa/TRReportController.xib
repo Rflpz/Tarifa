@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRReportController">
+            <connections>
+                <outlet property="btnEnviar" destination="obW-bs-nWy" id="SeP-5E-9TE"/>
+                <outlet property="txtEmail" destination="JUN-b9-9IO" id="cc2-zx-BjR"/>
+                <outlet property="txtError" destination="Wck-Bf-6fD" id="Gvc-zx-wmz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obW-bs-nWy">
+                    <rect key="frame" x="8" y="510" width="304" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="G2g-jl-OY3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="ENVIAR">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendReport:" destination="-1" eventType="touchUpInside" id="73m-JM-eOO"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JUN-b9-9IO">
+                    <rect key="frame" x="8" y="102" width="304" height="30"/>
+                    <color key="tintColor" red="0.84848484848484851" green="0.77017425344682688" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Uvo-iG-VHc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="yes" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
+                    <connections>
+                        <action selector="hideKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="8Yb-wq-lc3"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electrónico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blV-ib-gk9">
+                    <rect key="frame" x="8" y="73" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="kqp-tj-XsQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wck-Bf-6fD">
+                    <rect key="frame" x="8" y="169" width="304" height="30"/>
+                    <color key="tintColor" red="0.84848484848484851" green="0.77017425344682688" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="miJ-qj-ZaU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="yes" keyboardAppearance="alert" returnKeyType="done"/>
+                    <connections>
+                        <action selector="hideKeyboard:" destination="-1" eventType="editingDidEndOnExit" id="dLE-e1-SvF"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué sucedió?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shL-Gk-fi0">
+                    <rect key="frame" x="8" y="140" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5lc-os-ZMl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JUN-b9-9IO" firstAttribute="top" secondItem="blV-ib-gk9" secondAttribute="bottom" constant="8" id="4O7-aO-HtY"/>
+                <constraint firstAttribute="trailing" secondItem="Wck-Bf-6fD" secondAttribute="trailing" constant="8" id="6Ce-Ml-use"/>
+                <constraint firstItem="JUN-b9-9IO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="9nL-vH-ADq"/>
+                <constraint firstItem="Wck-Bf-6fD" firstAttribute="top" secondItem="shL-Gk-fi0" secondAttribute="bottom" constant="8" id="MLt-fS-rU1"/>
+                <constraint firstItem="shL-Gk-fi0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Mdu-J6-yUJ"/>
+                <constraint firstItem="Wck-Bf-6fD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Ngq-05-0cL"/>
+                <constraint firstAttribute="trailing" secondItem="JUN-b9-9IO" secondAttribute="trailing" constant="8" id="OUO-gm-zsI"/>
+                <constraint firstItem="obW-bs-nWy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="SjV-Li-QR7"/>
+                <constraint firstAttribute="trailing" secondItem="obW-bs-nWy" secondAttribute="trailing" constant="8" id="c65-Ft-QEv"/>
+                <constraint firstItem="blV-ib-gk9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="gPG-Cg-KCi"/>
+                <constraint firstAttribute="trailing" secondItem="shL-Gk-fi0" secondAttribute="trailing" constant="8" id="lRf-Oj-mIh"/>
+                <constraint firstAttribute="trailing" secondItem="blV-ib-gk9" secondAttribute="trailing" constant="8" id="m2q-aR-g5z"/>
+                <constraint firstItem="shL-Gk-fi0" firstAttribute="top" secondItem="JUN-b9-9IO" secondAttribute="bottom" constant="8" id="tZJ-g8-FMG"/>
+                <constraint firstItem="blV-ib-gk9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="vYO-A8-67m"/>
+                <constraint firstAttribute="bottom" secondItem="obW-bs-nWy" secondAttribute="bottom" constant="8" id="zNM-Yu-vvX"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="248" y="310"/>
+        </view>
+    </objects>
+</document>
